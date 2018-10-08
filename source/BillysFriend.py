@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 from discord.ext.commands import Bot
 from utils import WikiSearch
 from utils import FunCalc
@@ -10,7 +12,7 @@ WIKI_LANG = "en"
 TLDR ={'lc':"Lists commands.",
         'wi':'Returns Wikipedia description of a subject. (Please use " " for more-than-one-word-long names) '}
 
-with open("./KeyFile.key", 'r') as f:
+with open("../../keys/KeyFile.key", 'r') as f:
     TOKEN = f.read().strip()
 
 #Basic funntions segment
